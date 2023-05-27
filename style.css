@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accennt-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+  font-family: 'Poppins',sans-serif;  
+  /* color:var(--primary-text-color) */
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/* utility class  */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.banner-text{
+    color: white;
+    padding: 15px,30px;
+    text-align: center;
+}
+.top-banner{
+    background-image: url(/PROJECTS/p1/Image/asset\ 38.jpeg);
+    background-color: #4fb3d4;
+    background-size:300px ;
+    background-repeat: none;
+}
+.container{
+    max-width: 1180px;
+    margin: auto;
+    padding-inline-start: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /* background-color: var(--accent-color); */
+}
+.company-logo img{ /* company ka logo ka img */
+    width: 200px;
+}
+
+
+.main-nav{
+    justify-content: space-between;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+.nav-links{
+flex-basis: 730px;
+}
+.hover-link{
+color: var(--primary-text-color);
+transition: 0.2s ease-out;}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+/* for sign up and get started button */
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white ;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--accent-color);
+    text-replace: 0.2s;
+
+}
+.primary-button:hover{
+    background-color: var(--accennt-color-dark);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24;
+
+}
+.secondary-button:hover{
+    color: var(--accent-color);
+
+}
